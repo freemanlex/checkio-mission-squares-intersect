@@ -1,0 +1,23 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def squares_intersect(s1: tuple[int, int, int], s2: tuple[int, int, int]) -> bool:
+    # your code here
+    return True
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(squares_intersect((2, 2, 3), (5, 5, 2)))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}squares_intersect({{t.input|p_args}})
+{% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}

@@ -1,0 +1,36 @@
+<!-- Describe task in general -->
+
+<p>
+    A square on the two-dimensional plane can be defined as a tuple <b class="code">(x, y, l)</b>, where <b class="code">(x, y)</b> are the coordinates of its <b>bottom left corner</b> and <b class="code">l</b> is the length of the side of the square. Given two squares as tuples <b class="code">(x1, y1, l1)</b> and <b class="code">(x2, y2, l2)</b>, your function should determine whether these two squares <b>intersect</b>, that is, their <b>areas</b> have at least one point in common, even if that one point is merely the shared corner point when these two squares are placed kitty corner. 
+</p>
+<p>
+    We also prepared a stick and a carrot for you.
+</p>
+<p>
+    This function <b>should not contain any loops or list comprehensions of any kind</b>, but should compute the result using only integer comparisons and conditional statements. 
+</p>
+<p>
+    It is actually much easier to determine that the two squares do <b>not</b> intersect, and then negate that answer. Two squares do not intersect if one of them ends in the horizontal direction before the other one begins, or if the same thing happens in the vertical direction.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Two tuples with three {% if is_js %}numbers{% else %}integers{% endif %} in each.
+</p>
+
+<p>
+    <strong>Output:</strong> Boolean. 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        This task is taken from the course CCPS 109 Computer Science I, as taught by <a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a>.
+    </i>
+</p>
