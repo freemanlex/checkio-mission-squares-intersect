@@ -1,0 +1,38 @@
+<!-- Describe task in general -->
+
+<p>
+    Ein Quadrat in der zweidimensionalen Ebene kann als Tupel <b class="code">(x, y, l)</b> definiert werden, wobei <b class="code">(x, y)</b> die Koordinaten seines <b>bottom left corner</b> und <b class="code">l</b> die Länge der Seite des Quadrats ist (wir betrachten nur Quadrate, die an den Achsen ausgerichtet sind). Bei zwei Quadraten als Tupel <b class="code">(x1, y1, l1)</b> und <b class="code">(x2, y2, l2)</b> sollte Ihre Funktion feststellen, ob diese beiden Quadrate <b>intersect</b>, d.h. ihre <b>areas</b> mindestens einen Punkt gemeinsam haben, auch wenn dieser eine Punkt nur der gemeinsame Eckpunkt ist, wenn diese beiden Quadrate in der Kittenecke platziert sind. 
+</p>
+<p>
+    Wir haben auch eine Peitsche und ein Zuckerbrot für Sie vorbereitet:
+</p>
+<ul>
+    <li>
+        <p>versuchen Sie, diese Aufgabe <b>with no loops or list comprehensions of any kind</b> zu schreiben, aber berechnen Sie das Ergebnis nur mit Ganzzahlvergleichen und bedingten Anweisungen;</p>
+    </li>
+    <li>
+        <p>es ist eigentlich viel einfacher, festzustellen, dass sich die beiden Quadrate <b>not</b> schneiden, und diese Antwort dann zu negieren. Zwei Quadrate überschneiden sich nicht, wenn eines von ihnen in horizontaler Richtung endet, bevor das andere beginnt, oder wenn dasselbe in vertikaler Richtung geschieht.</p>
+    </li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Tupel mit drei {% if is_js %}Zahlen{% else %}ganzen Zahlen{% endif %} in jedem.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Boolean{% else %}Bool{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        Diese Aufgabe stammt aus dem Kurs CCPS 109 Computer Science I, der von <a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a> unterrichtet wird.
+    </i>
+</p>
