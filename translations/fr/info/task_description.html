@@ -1,0 +1,38 @@
+<!-- Describe task in general -->
+
+<p>
+    Un carré sur le plan bidimensionnel peut être défini comme un tuple <b class="code">(x, y, l)</b>, où <b class="code">(x, y)</b> sont les coordonnées de son <b>bottom left corner</b> et <b class="code">l</b> est la longueur du côté du carré (nous ne considérons que les carrés qui sont alignés sur les axes). Étant donné deux carrés sous la forme des tuples <b class="code">(x1, y1, l1)</b> et <b class="code">(x2, y2, l2)</b>, votre fonction doit déterminer si ces deux carrés <b>intersect</b>, c'est-à-dire leur <b>areas</b>, ont au moins un point commun, même si ce point est simplement le point d'angle partagé lorsque ces deux carrés sont placés en coin. 
+</p>
+<p>
+    Nous avons également préparé un bâton et une carotte pour vous:
+</p>
+<ul>
+    <li>
+        <p>essayez d'écrire cette mission <b>with no loops or list comprehensions of any kind</b>, mais calculez le résultat en utilisant uniquement des comparaisons de nombres entiers et des instructions conditionnelles;</p>
+    </li>
+    <li>
+        <p>il est en fait beaucoup plus facile de déterminer que les deux carrés se coupent <b>not</b>, puis de nier cette réponse. Deux carrés ne se coupent pas si l'un d'eux se termine dans la direction horizontale avant que l'autre ne commence, ou si la même chose se produit dans la direction verticale.</p>
+    </li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux tuples contenant chacun trois nombres {% if is_js %}{% else %} entiers{% endif %}.
+</p>
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Booléen{% else %}Bool{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        Cette tâche est tirée du cours CCPS 109 Computer Science I, enseigné par <a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a>.
+    </i>
+</p>
