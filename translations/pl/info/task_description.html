@@ -1,0 +1,38 @@
+<!-- Describe task in general -->
+
+<p>
+    Kwadrat na dwuwymiarowej płaszczyźnie może być zdefiniowany jako krotka <b class="code">(x, y, l)</b>, gdzie <b class="code">(x, y)</b> to współrzędne kwadratu <b>bottom left corner</b>, a <b class="code">l</b> to długość boku kwadratu (rozważamy tylko kwadraty, które są wyrównane do osi). Biorąc pod uwagę dwa kwadraty jako krotki <b class="code">(x1, y1, l1)</b> i <b class="code">(x2, y2, l2)</b>, funkcja powinna określić, czy te dwa kwadraty <b>intersect</b>, czyli ich <b>areas</b> mają co najmniej jeden punkt wspólny, nawet jeśli ten jeden punkt jest tylko wspólnym punktem narożnym, gdy te dwa kwadraty są umieszczone w kącie. 
+</p>
+<p>
+    Przygotowaliśmy również dla Państwa kij i marchewkę:
+</p>
+<ul>
+    <li>
+        <p>proszę spróbować napisać tę misję <b>with no loops or list comprehensions of any kind</b>, ale proszę obliczyć wynik używając tylko porównań liczb całkowitych i instrukcji warunkowych;</p>
+    </li>
+    <li>
+        <p>w rzeczywistości znacznie łatwiej jest ustalić, że dwa kwadraty nie <b>not</b> przecinają się, a następnie zanegować tę odpowiedź. Dwa kwadraty nie przecinają się, jeśli jeden z nich kończy się w kierunku poziomym przed rozpoczęciem drugiego lub jeśli to samo dzieje się w kierunku pionowym.</p>
+    </li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Dwie krotki z trzema {% if is_js %}liczbami{% else %}całkowitymi{% endif %} w każdej.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> {% if is_js %}Boolean{% else %}Bool{% endif %}. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        To zadanie pochodzi z kursu CCPS 109 Computer Science I, prowadzonego przez <a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a>.
+    </i>
+</p>
