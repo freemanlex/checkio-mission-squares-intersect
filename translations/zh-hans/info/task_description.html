@@ -1,0 +1,38 @@
+<!-- Describe task in general -->
+
+<p>
+    二维平面上的正方形可以定义为一个图元<b class="code">(x, y, l)</b> ，其中<b class="code">(x, y)</b> 是正方形<b>bottom left corner</b> 的坐标，<b class="code">l</b> 是正方形的边长（我们只考虑与轴对齐的正方形）。给定两个正方形作为图元<b class="code">(x1, y1, l1)</b> 和<b class="code">(x2, y2, l2)</b> ，您的函数应确定这两个正方形<b>intersect</b> ，即它们的<b>areas</b> 是否至少有一个共同点，即使这一个点只是这两个正方形放在小猫角时的共同角点。 
+</p>
+<p>
+    我们还为您准备了大棒和胡萝卜：
+</p>
+<ul>
+    <li>
+        <p>试着编写这个任务<b>with no loops or list comprehensions of any kind</b> ，但计算结果时应只使用整数比较和条件语句；</p>
+    </li>
+    <li>
+        <p>实际上，先确定两个正方形确实相交<b>not</b> ，然后再否定这个答案要容易得多。如果两个正方形中的一个在水平方向上结束于另一个开始之前，或者在垂直方向上发生同样的情况，那么这两个正方形就不相交。</p>
+    </li>
+</ul>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个元组，每个元组中有三个{% if is_js %}数字{% else %}整数{% endif %} 。
+</p>
+
+<p>
+   <strong>输出：</strong> {% if is_js %}布尔{% else %}Bool{% endif %} 。 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        本任务摘自由<a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a> 讲授的 CCPS 109 计算机科学 I 课程。
+    </i>
+</p>
